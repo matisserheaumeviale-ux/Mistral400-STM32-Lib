@@ -1,8 +1,22 @@
-/*
- * File: m400_ucCompareStateChange.h
- * Author: Matisse Rhéaume Viale
- * Description: Public API for generic feedback state-change handling.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_ucCompareStateChange
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Declares the public API for M400_ucCompareStateChange.
+ * RELATED FILE  : include/m400_ucCompareStateChange.h
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #ifndef M400_UCCOMPARESTATECHANGE_H
 #define M400_UCCOMPARESTATECHANGE_H

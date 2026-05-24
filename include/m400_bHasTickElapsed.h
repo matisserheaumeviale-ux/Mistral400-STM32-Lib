@@ -1,8 +1,22 @@
-/*
- * File: m400_bHasTickElapsed.h
- * Author: Matisse Rhéaume Viale
- * Description: Public API for wrap-safe elapsed tick checks.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_bHasTickElapsed
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Declares the public API for M400_bHasTickElapsed.
+ * RELATED FILE  : include/m400_bHasTickElapsed.h
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #ifndef M400_BHASTICKELAPSED_H
 #define M400_BHASTICKELAPSED_H

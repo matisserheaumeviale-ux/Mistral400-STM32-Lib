@@ -1,8 +1,22 @@
-/*
- * File: m400_vTachometerRegisterPulse.c
- * Author: Matisse Rhéaume Viale
- * Description: Stores a tachometer capture period with timer wrap handling.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_vTachometerRegisterPulse
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_vTachometerRegisterPulse.
+ * RELATED FILE  : src/m400_vTachometerRegisterPulse.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_vTachometerRegisterPulse.h"
 

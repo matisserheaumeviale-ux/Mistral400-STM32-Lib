@@ -1,8 +1,22 @@
-/*
- * File: m400_vHistoryExportUART.c
- * Author: Matisse Rhéaume Viale
- * Description: Exports history samples as simple CSV text over STM32 HAL UART.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_vHistoryExportUART
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_vHistoryExportUART.
+ * RELATED FILE  : src/m400_vHistoryExportUART.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_vHistoryExportUART.h"
 

@@ -1,8 +1,22 @@
-/*
- * File: m400_vFanStopAll.c
- * Author: Matisse Rhéaume Viale
- * Description: Stops a caller-provided list of fan PWM channels.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_vFanStopAll
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_vFanStopAll.
+ * RELATED FILE  : src/m400_vFanStopAll.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_vFanStopAll.h"
 

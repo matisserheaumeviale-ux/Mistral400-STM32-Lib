@@ -1,43 +1,21 @@
 /* =============================================================================================
- * FICHIER     : LCD.c
- * PROJET      : Projet-de-fin-de-session-2026
- * CHEMIN      : Logiciel/STM32/EnCours/Core/Src/LCD.c
+ * Function      : M400_LCD
  * =============================================================================================
- * AUTEUR      : Matisse Rheaume-Viale
- * VERSION     : 1.0
- * CRÉATION    : 2026-04-29
- * COMPILATEUR : VSCode avec extension Makefile et ARM GCC
- * LICENCE     : Usage scolaire / interne
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
  * =============================================================================================
  * DESCRIPTION :
- * Driver bas niveau pour un LCD compatible HD44780 en mode 4 bits.
- * Ce fichier gere l'envoi des commandes, des caracteres, le positionnement
- * du curseur et quelques helpers d'affichage pour un ecran 20x4.
- * MATÉRIEL    : LCD HD44780 20x4 relie sur GPIOB
- * DÉPENDANCES : LCD.h, stdarg.h, stdio.h, string.h, stm32f1xx_hal.h
+ * Implements M400_LCD.
+ * RELATED FILE  : src/m400_lcd.c
+ * DEPENDENCIES  : See file includes.
  * =============================================================================================
- * SPÉCIFICATIONS TECHNIQUES :
- *
- * * TYPES DE DONNÉES & VARIABLES :
- * - Macros de broches RS, RW, EN et D4 a D7
- * - Buffers locaux pour le formatage texte et le defilement
- *
- * * GESTION DES POINTEURS :
- * - Les chaines sont passees en const char * et verifiees contre NULL
- * - Aucun usage de memoire dynamique
- *
- * * AUTRES MÉCANISMES :
- * - Delais logiciels par boucle vide
- * - Communication 4 bits avec acces direct aux registres GPIOB
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
  * =============================================================================================
- * NOTES :
- * 1. Les timings sont suffisants pour un projet labo, pas pour un driver temps reel strict.
- * 2. Le mapping physique du LCD est code en dur dans ce fichier.
- * =============================================================================================
- * HISTORIQUE DES RÉVISIONS :
- * Date        Ver   Auteur    Notes
- * ----------  ----  --------  ----------------------------------------------------------------
- * 2026-04-29  1.0   Matisse   En-tete rempli selon l'implementation actuelle
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
  * =============================================================================================
  */
 #include "m400_lcd.h"

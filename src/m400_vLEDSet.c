@@ -1,8 +1,22 @@
-/*
- * File: m400_vLEDSet.c
- * Author: Matisse Rhéaume Viale
- * Description: Writes a logical LED state to GPIO.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_vLEDSet
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_vLEDSet.
+ * RELATED FILE  : src/m400_vLEDSet.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_vLEDSet.h"
 

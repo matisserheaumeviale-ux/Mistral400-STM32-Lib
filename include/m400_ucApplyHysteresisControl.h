@@ -1,8 +1,22 @@
-/*
- * File: m400_ucApplyHysteresisControl.h
- * Author: Matisse Rhéaume Viale
- * Description: Public API for simple threshold hysteresis control.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_ucApplyHysteresisControl
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Declares the public API for M400_ucApplyHysteresisControl.
+ * RELATED FILE  : include/m400_ucApplyHysteresisControl.h
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #ifndef M400_UCAPPLYHYSTERESISCONTROL_H
 #define M400_UCAPPLYHYSTERESISCONTROL_H

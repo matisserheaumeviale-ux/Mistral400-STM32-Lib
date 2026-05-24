@@ -1,8 +1,22 @@
-/*
- * File: m400_ucUARTCommandAvailable.c
- * Author: Matisse Rhéaume Viale
- * Description: Polls UART and latches one available command byte.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_ucUARTCommandAvailable
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_ucUARTCommandAvailable.
+ * RELATED FILE  : src/m400_ucUARTCommandAvailable.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_ucUARTCommandAvailable.h"
 

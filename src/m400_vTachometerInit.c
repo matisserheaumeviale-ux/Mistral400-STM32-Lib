@@ -1,8 +1,22 @@
-/*
- * File: m400_vTachometerInit.c
- * Author: Matisse Rhéaume Viale
- * Description: Clears all fields in a caller-owned tachometer context.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_vTachometerInit
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_vTachometerInit.
+ * RELATED FILE  : src/m400_vTachometerInit.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_vTachometerInit.h"
 

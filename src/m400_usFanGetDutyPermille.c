@@ -1,8 +1,22 @@
-/*
- * File: m400_usFanGetDutyPermille.c
- * Author: Matisse Rhéaume Viale
- * Description: Converts a PWM compare value back to fan duty in permille.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_usFanGetDutyPermille
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_usFanGetDutyPermille.
+ * RELATED FILE  : src/m400_usFanGetDutyPermille.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_usFanGetDutyPermille.h"
 

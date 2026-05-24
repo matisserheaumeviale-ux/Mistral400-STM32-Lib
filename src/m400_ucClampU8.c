@@ -1,8 +1,22 @@
-/*
- * File: m400_ucClampU8.c
- * Author: Matisse Rhéaume Viale
- * Description: Clamps an unsigned 8-bit value between two limits.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_ucClampU8
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_ucClampU8.
+ * RELATED FILE  : src/m400_ucClampU8.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_ucClampU8.h"
 

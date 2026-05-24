@@ -1,8 +1,22 @@
-/*
- * File: m400_ucCompareStateChange.c
- * Author: Matisse Rhéaume Viale
- * Description: Updates generic stored state when feedback changes.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_ucCompareStateChange
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_ucCompareStateChange.
+ * RELATED FILE  : src/m400_ucCompareStateChange.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_ucCompareStateChange.h"
 

@@ -1,8 +1,22 @@
-/*
- * File: m400_vButtonTask.c
- * Author: Matisse Rhéaume Viale
- * Description: Updates debounced state and press latch for one button.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_vButtonTask
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_vButtonTask.
+ * RELATED FILE  : src/m400_vButtonTask.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_vButtonTask.h"
 

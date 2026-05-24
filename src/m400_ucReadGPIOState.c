@@ -1,8 +1,22 @@
-/*
- * File: m400_ucReadGPIOState.c
- * Author: Matisse Rhéaume Viale
- * Description: Reads a GPIO pin and converts it to an M400 on/off state.
- * License: MIT
+/* =============================================================================================
+ * Function      : M400_ucReadGPIOState
+ * =============================================================================================
+ * AUTHOR        : Matisse Rhéaume-Viale & AFLC
+ * VERSION       : 1.0
+ * =============================================================================================
+ * DESCRIPTION :
+ * Implements M400_ucReadGPIOState.
+ * RELATED FILE  : src/m400_ucReadGPIOState.c
+ * DEPENDENCIES  : See file includes.
+ * =============================================================================================
+ * DATA TYPES & VARIABLES :
+ * Uses the types and variables visible in the function signature.
+ * POINTER MANAGEMENT :
+ * Validates pointers when received by the function.
+ * =============================================================================================
+ * Expected Result:
+ * The function performs its task without affecting other parts of the program.
+ * =============================================================================================
  */
 #include "m400_ucReadGPIOState.h"
 
