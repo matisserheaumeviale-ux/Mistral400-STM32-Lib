@@ -1,3 +1,9 @@
+/*
+ * File: m400_vApplyOutputState.h
+ * Author: Matisse Rhéaume Viale
+ * Description: Public API for applying a generic feedback-controlled output state.
+ * License: MIT
+ */
 #ifndef M400_VAPPLYOUTPUTSTATE_H
 #define M400_VAPPLYOUTPUTSTATE_H
 

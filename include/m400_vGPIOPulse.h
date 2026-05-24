@@ -1,3 +1,9 @@
+/*
+ * File: m400_vGPIOPulse.h
+ * Author: Matisse Rhéaume Viale
+ * Description: Public API for sending a timed GPIO pulse.
+ * License: MIT
+ */
 #ifndef M400_VGPIOPULSE_H
 #define M400_VGPIOPULSE_H
 

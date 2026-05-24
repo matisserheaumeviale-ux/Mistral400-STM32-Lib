@@ -1,3 +1,9 @@
+/*
+ * File: m400_vGPIOPulse.c
+ * Author: Matisse Rhéaume Viale
+ * Description: Sends a timed command pulse on a GPIO output.
+ * License: MIT
+ */
 #include "m400_vGPIOPulse.h"
 
 #include <stddef.h>

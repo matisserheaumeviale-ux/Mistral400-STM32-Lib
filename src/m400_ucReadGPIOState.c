@@ -1,33 +1,28 @@
-
-/* =============================================================================================
- * Fonction     : 
- * =============================================================================================
- * AUTEUR      : Matisse Rheaume-Viale & AFLC
- * VERSION     : 1.0
- * =============================================================================================
- * DESCRIPTION :
- * Lit une pin de feedback et retourne ON ou OFF.
- * FICHIER EN LIEN: Logiciel/STM32/EnCours/Core/Src/actions.c
- * DÉPENDANCES : Voir les includes du fichier.
- * =============================================================================================
- * TYPES DE DONNÉES & VARIABLES :
- * Utilise les types et variables visibles dans la signature de la fonction.
- * GESTION DES POINTEURS :
- * Verifie les pointeurs quand la fonction en recoit.
- * =============================================================================================
- * Resulats attendu:
- * La fonction fait son action sans modifier les autres parties du programme.
- * ============================================================================================
+/*
+ * File: m400_ucReadGPIOState.c
+ * Author: Matisse Rhéaume Viale
+ * Description: Reads a GPIO pin and converts it to an M400 on/off state.
+ * License: MIT
  */
-static UC xLireEtatDepuisPin(GPIO_TypeDef *xPort,  
+#include "m400_ucReadGPIOState.h"
+
+#include <stddef.h>
+
+uint8_t M400_ucReadGPIOState(GPIO_TypeDef *xPort,
                              uint16_t usPin,
-                             GPIO_PinState xEtatActif,
-                             UC ucEtatDefaut)
+                             GPIO_PinState xActiveState,
+                             uint8_t ucDefaultState,
+                             uint8_t ucUseRealFeedback)
 {
-  if (UTILISER_FEEDBACKS_REELS == 0U) // Utilisation d'états par défaut sans lire les pins de feedback
+  if (ucUseRealFeedback == 0U)
   {
-    return ucEtatDefaut; // Retourne l'état par défaut défini pour l'élément (chauffage, ventilation, lumière ou autre)
+    return ucDefaultState;
   }
 
-  return (HAL_GPIO_ReadPin(xPort, usPin) == xEtatActif) ? ON : OFF; // Lit l'état réel depuis la pin de feedback et le convertit en ON/OFF
+  if (xPort == NULL)
+  {
+    return ucDefaultState;
+  }
+
+  return (HAL_GPIO_ReadPin(xPort, usPin) == xActiveState) ? M400_ON : M400_OFF;
 }

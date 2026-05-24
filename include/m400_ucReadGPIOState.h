@@ -1,3 +1,9 @@
+/*
+ * File: m400_ucReadGPIOState.h
+ * Author: Matisse Rhéaume Viale
+ * Description: Public API for reading a GPIO feedback state.
+ * License: MIT
+ */
 #ifndef M400_UCREADGPIOSTATE_H
 #define M400_UCREADGPIOSTATE_H
 

@@ -1,3 +1,9 @@
+/*
+ * File: m400_vApplyOutputState.c
+ * Author: Matisse Rhéaume Viale
+ * Description: Applies a generic output state using GPIO feedback and pulse control.
+ * License: MIT
+ */
 #include "m400_vApplyOutputState.h"
 
 #include "m400_ucReadGPIOState.h"
