@@ -50,7 +50,11 @@ The new history API uses caller-owned `uint16_t` buffers and does not depend on 
 
 ### `affichage.c`
 
-No project menu was extracted. The display text is specific to the school project. Generic LCD helpers were instead extracted from AFLC UI patterns.
+The generic LCD helpers remain in the main library. The school-project UART text was extracted into `project_specific`:
+
+- `M400_vProjectPrintMainMenu()`
+- `M400_vProjectPrintEmergencyMenu()`
+- `M400_vProjectPrintSystemState()`
 
 ### `controle.c`
 
@@ -58,7 +62,11 @@ No project menu was extracted. The display text is specific to the school projec
 - `M400_ucApplyHysteresisControl()`
 - `M400_ucCompareStateChange()`
 
-The full automatic and manual control modes were not extracted because they directly depend on heating, ventilation, lighting, and project table indexes.
+The generic control helpers remain in the main library. The school-project automatic mode pattern was extracted into `project_specific`:
+
+- `M400_vProjectApplyAutomaticMode()`
+
+It uses callback hooks instead of directly depending on heating, fan, or light functions.
 
 ## Extracted From `legacy/aflc`
 
@@ -70,7 +78,13 @@ The full automatic and manual control modes were not extracted because they dire
 - `M400_vFanStop()`
 - `M400_vFanStopAll()`
 
-The AFLC fan state machine, startup test, fault policy, and profile-to-RPM mapping were not copied into the main library.
+The AFLC fan state machine remains outside the main library. The reusable AFLC-specific status helpers were extracted into `project_specific`:
+
+- `M400_vAFLCFanUpdateStatus()`
+- `M400_bAFLCFanHasAnyFault()`
+- `M400_vAFLCFanRampTask()`
+
+The full profile-to-RPM mapping was not copied.
 
 ### `tachometer.c/.h`
 
@@ -99,7 +113,9 @@ The UART-only simulated confirm button from AFLC was not copied as application l
 - `M400_vLEDToggle()`
 - `M400_vLEDBlinkTask()`
 
-AFLC-specific LED modes were not extracted.
+AFLC-specific LED mode mapping was extracted into `project_specific`:
+
+- `M400_vAFLCLEDApplyMode()`
 
 ### `uart_cmd.c/.h`
 
@@ -108,7 +124,11 @@ AFLC-specific LED modes were not extracted.
 - `M400_ucUARTCommandRead()`
 - `M400_vUARTPrintString()`
 
-The AFLC command menu and fan test commands were not extracted.
+The AFLC UART help menu was extracted into `project_specific`:
+
+- `M400_vAFLCUARTPrintHelp()`
+
+The full command executor was not copied because it directly dispatches AFLC application actions.
 
 ### `ui_lcd.c/.h`
 
@@ -126,9 +146,8 @@ AFLC runtime screens, profile screens, startup screens, and debug overlays were 
 
 - School project menus and emergency-state text
 - Heating, ventilation, lighting action wrappers
-- Automatic mode tied to temperature and luminosity outputs
 - `TIM2_IRQHandler()`
-- AFLC fan ramp test and startup safe-state policy
+- AFLC startup safe-state policy
 - AFLC profile rendering and runtime LCD screens
 - AFLC full UART command menu
 - Missing `AFLCalcul`, `Profil`, and `temperature_stub` modules were not present in this local legacy tree, so no extraction was performed for them.

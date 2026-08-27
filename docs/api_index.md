@@ -87,3 +87,20 @@ License: MIT
 ## Shared Type Header
 
 - `M400_Tachometer_t`, `M400_Button_t`, `M400_LED_t`, and `M400_UARTCommand_t` are declared in `include/m400_types.h`.
+
+## Project-Specific School Helpers
+
+- `M400_vProjectPrintMainMenu()` - `include/project_specific/m400_vProjectPrintMainMenu.h`
+- `M400_vProjectPrintEmergencyMenu()` - `include/project_specific/m400_vProjectPrintEmergencyMenu.h`
+- `M400_vProjectPrintSystemState()` - `include/project_specific/m400_vProjectPrintSystemState.h`
+- `M400_vProjectApplyAutomaticMode()` - `include/project_specific/m400_vProjectApplyAutomaticMode.h`
+- `M400_ProjectControlledOutput_t` is declared in `include/project_specific/m400_project_types.h`.
+
+## Project-Specific AFLC Helpers
+
+- `M400_vAFLCFanUpdateStatus()` - `include/project_specific/m400_vAFLCFanUpdateStatus.h`
+- `M400_bAFLCFanHasAnyFault()` - `include/project_specific/m400_bAFLCFanHasAnyFault.h`
+- `M400_vAFLCFanRampTask()` - `include/project_specific/m400_vAFLCFanRampTask.h`
+- `M400_vAFLCUARTPrintHelp()` - `include/project_specific/m400_vAFLCUARTPrintHelp.h`
+- `M400_vAFLCLEDApplyMode()` - `include/project_specific/m400_vAFLCLEDApplyMode.h`
+- AFLC project-specific status, ramp, and LED mode types are declared in `include/project_specific/m400_aflc_types.h`.
