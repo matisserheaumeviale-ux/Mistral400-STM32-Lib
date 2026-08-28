@@ -9,98 +9,98 @@ License: MIT
 
 ## GPIO And Output Control
 
-- `M400_ucReadGPIOState()` - `include/m400_ucReadGPIOState.h`
-- `M400_vGPIOPulse()` - `include/m400_vGPIOPulse.h`
-- `M400_vApplyOutputState()` - `include/m400_vApplyOutputState.h`
+- `ucReadGPIOState()` - `include/ucReadGPIOState.h`
+- `vGPIOPulse()` - `include/vGPIOPulse.h`
+- `vApplyOutputState()` - `include/vApplyOutputState.h`
 
 ## ADC, Temperature, And UART Reads
 
-- `M400_usReadADC()` - `include/m400_usReadADC.h`
-- `M400_fConvertADCToTemperature()` - `include/m400_fConvertADCToTemperature.h`
-- `M400_bIsUARTDataAvailable()` - `include/m400_bIsUARTDataAvailable.h`
-- `M400_vReadUARTCommand()` - `include/m400_vReadUARTCommand.h`
+- `usReadADC()` - `include/usReadADC.h`
+- `fConvertADCToTemperature()` - `include/fConvertADCToTemperature.h`
+- `bIsUARTDataAvailable()` - `include/bIsUARTDataAvailable.h`
+- `vReadUARTCommand()` - `include/vReadUARTCommand.h`
 
 ## Software Time Helpers
 
-- `M400_vIncrementSoftwareTick()` - `include/m400_vIncrementSoftwareTick.h`
-- `M400_bHasTickElapsed()` - `include/m400_bHasTickElapsed.h`
-- `M400_vResetSoftwareCounter()` - `include/m400_vResetSoftwareCounter.h`
-- `M400_vTimerPeriodElapsedCallback()` - `include/m400_vTimerPeriodElapsedCallback.h`
+- `vIncrementSoftwareTick()` - `include/vIncrementSoftwareTick.h`
+- `bHasTickElapsed()` - `include/bHasTickElapsed.h`
+- `vResetSoftwareCounter()` - `include/vResetSoftwareCounter.h`
+- `vTimerPeriodElapsedCallback()` - `include/vTimerPeriodElapsedCallback.h`
 
 ## History Buffer
 
-- `M400_vHistoryAddSample()` - `include/m400_vHistoryAddSample.h`
-- `M400_usHistoryGetSample()` - `include/m400_usHistoryGetSample.h`
-- `M400_vHistoryClear()` - `include/m400_vHistoryClear.h`
-- `M400_vHistoryExportUART()` - `include/m400_vHistoryExportUART.h`
+- `vHistoryAddSample()` - `include/vHistoryAddSample.h`
+- `usHistoryGetSample()` - `include/usHistoryGetSample.h`
+- `vHistoryClear()` - `include/vHistoryClear.h`
+- `vHistoryExportUART()` - `include/vHistoryExportUART.h`
 
 ## Control Helpers
 
-- `M400_ucClampU8()` - `include/m400_ucClampU8.h`
-- `M400_ucApplyHysteresisControl()` - `include/m400_ucApplyHysteresisControl.h`
-- `M400_ucCompareStateChange()` - `include/m400_ucCompareStateChange.h`
+- `ucClampU8()` - `include/ucClampU8.h`
+- `ucApplyHysteresisControl()` - `include/ucApplyHysteresisControl.h`
+- `ucCompareStateChange()` - `include/ucCompareStateChange.h`
 
 ## Fan PWM
 
-- `M400_vFanPWMInit()` - `include/m400_vFanPWMInit.h`
-- `M400_vFanSetDutyPermille()` - `include/m400_vFanSetDutyPermille.h`
-- `M400_usFanGetDutyPermille()` - `include/m400_usFanGetDutyPermille.h`
-- `M400_vFanStop()` - `include/m400_vFanStop.h`
-- `M400_vFanStopAll()` - `include/m400_vFanStopAll.h`
+- `vFanPWMInit()` - `include/vFanPWMInit.h`
+- `vFanSetDutyPermille()` - `include/vFanSetDutyPermille.h`
+- `usFanGetDutyPermille()` - `include/usFanGetDutyPermille.h`
+- `vFanStop()` - `include/vFanStop.h`
+- `vFanStopAll()` - `include/vFanStopAll.h`
 
 ## Tachometer
 
-- `M400_vTachometerInit()` - `include/m400_vTachometerInit.h`
-- `M400_vTachometerRegisterPulse()` - `include/m400_vTachometerRegisterPulse.h`
-- `M400_uiTachometerComputeRPM()` - `include/m400_uiTachometerComputeRPM.h`
-- `M400_vTachometerTask()` - `include/m400_vTachometerTask.h`
-- `M400_uiTachometerGetRPM()` - `include/m400_uiTachometerGetRPM.h`
+- `vTachometerInit()` - `include/vTachometerInit.h`
+- `vTachometerRegisterPulse()` - `include/vTachometerRegisterPulse.h`
+- `uiTachometerComputeRPM()` - `include/uiTachometerComputeRPM.h`
+- `vTachometerTask()` - `include/vTachometerTask.h`
+- `uiTachometerGetRPM()` - `include/uiTachometerGetRPM.h`
 
 ## Button
 
-- `M400_vButtonInit()` - `include/m400_vButtonInit.h`
-- `M400_ucButtonReadRaw()` - `include/m400_ucButtonReadRaw.h`
-- `M400_ucButtonReadDebounced()` - `include/m400_ucButtonReadDebounced.h`
-- `M400_vButtonTask()` - `include/m400_vButtonTask.h`
-- `M400_ucButtonWasPressed()` - `include/m400_ucButtonWasPressed.h`
+- `vButtonInit()` - `include/vButtonInit.h`
+- `ucButtonReadRaw()` - `include/ucButtonReadRaw.h`
+- `ucButtonReadDebounced()` - `include/ucButtonReadDebounced.h`
+- `vButtonTask()` - `include/vButtonTask.h`
+- `ucButtonWasPressed()` - `include/ucButtonWasPressed.h`
 
 ## LED
 
-- `M400_vLEDInit()` - `include/m400_vLEDInit.h`
-- `M400_vLEDSet()` - `include/m400_vLEDSet.h`
-- `M400_vLEDToggle()` - `include/m400_vLEDToggle.h`
-- `M400_vLEDBlinkTask()` - `include/m400_vLEDBlinkTask.h`
+- `vLEDInit()` - `include/vLEDInit.h`
+- `vLEDSet()` - `include/vLEDSet.h`
+- `vLEDToggle()` - `include/vLEDToggle.h`
+- `vLEDBlinkTask()` - `include/vLEDBlinkTask.h`
 
 ## UART Command
 
-- `M400_vUARTCommandInit()` - `include/m400_vUARTCommandInit.h`
-- `M400_ucUARTCommandAvailable()` - `include/m400_ucUARTCommandAvailable.h`
-- `M400_ucUARTCommandRead()` - `include/m400_ucUARTCommandRead.h`
-- `M400_vUARTPrintString()` - `include/m400_vUARTPrintString.h`
+- `vUARTCommandInit()` - `include/vUARTCommandInit.h`
+- `ucUARTCommandAvailable()` - `include/ucUARTCommandAvailable.h`
+- `ucUARTCommandRead()` - `include/ucUARTCommandRead.h`
+- `vUARTPrintString()` - `include/vUARTPrintString.h`
 
 ## LCD UI Helpers
 
-- `M400_vLCDPrintStatusLine()` - `include/m400_vLCDPrintStatusLine.h`
-- `M400_vLCDPrintCentered()` - `include/m400_vLCDPrintCentered.h`
-- `M400_vLCDClearLine()` - `include/m400_vLCDClearLine.h`
+- `vLCDPrintStatusLine()` - `include/vLCDPrintStatusLine.h`
+- `vLCDPrintCentered()` - `include/vLCDPrintCentered.h`
+- `vLCDClearLine()` - `include/vLCDClearLine.h`
 
 ## Shared Type Header
 
-- `M400_Tachometer_t`, `M400_Button_t`, `M400_LED_t`, and `M400_UARTCommand_t` are declared in `include/m400_types.h`.
+- `Tachometer_t`, `Button_t`, `LED_t`, and `UARTCommand_t` are declared in `include/types.h`.
 
 ## Project-Specific School Helpers
 
-- `M400_vProjectPrintMainMenu()` - `include/project_specific/m400_vProjectPrintMainMenu.h`
-- `M400_vProjectPrintEmergencyMenu()` - `include/project_specific/m400_vProjectPrintEmergencyMenu.h`
-- `M400_vProjectPrintSystemState()` - `include/project_specific/m400_vProjectPrintSystemState.h`
-- `M400_vProjectApplyAutomaticMode()` - `include/project_specific/m400_vProjectApplyAutomaticMode.h`
-- `M400_ProjectControlledOutput_t` is declared in `include/project_specific/m400_project_types.h`.
+- `vProjectPrintMainMenu()` - `include/project_specific/vProjectPrintMainMenu.h`
+- `vProjectPrintEmergencyMenu()` - `include/project_specific/vProjectPrintEmergencyMenu.h`
+- `vProjectPrintSystemState()` - `include/project_specific/vProjectPrintSystemState.h`
+- `vProjectApplyAutomaticMode()` - `include/project_specific/vProjectApplyAutomaticMode.h`
+- `ProjectControlledOutput_t` is declared in `include/project_specific/project_types.h`.
 
 ## Project-Specific AFLC Helpers
 
-- `M400_vAFLCFanUpdateStatus()` - `include/project_specific/m400_vAFLCFanUpdateStatus.h`
-- `M400_bAFLCFanHasAnyFault()` - `include/project_specific/m400_bAFLCFanHasAnyFault.h`
-- `M400_vAFLCFanRampTask()` - `include/project_specific/m400_vAFLCFanRampTask.h`
-- `M400_vAFLCUARTPrintHelp()` - `include/project_specific/m400_vAFLCUARTPrintHelp.h`
-- `M400_vAFLCLEDApplyMode()` - `include/project_specific/m400_vAFLCLEDApplyMode.h`
-- AFLC project-specific status, ramp, and LED mode types are declared in `include/project_specific/m400_aflc_types.h`.
+- `vAFLCFanUpdateStatus()` - `include/project_specific/vAFLCFanUpdateStatus.h`
+- `bAFLCFanHasAnyFault()` - `include/project_specific/bAFLCFanHasAnyFault.h`
+- `vAFLCFanRampTask()` - `include/project_specific/vAFLCFanRampTask.h`
+- `vAFLCUARTPrintHelp()` - `include/project_specific/vAFLCUARTPrintHelp.h`
+- `vAFLCLEDApplyMode()` - `include/project_specific/vAFLCLEDApplyMode.h`
+- AFLC project-specific status, ramp, and LED mode types are declared in `include/project_specific/aflc_types.h`.
