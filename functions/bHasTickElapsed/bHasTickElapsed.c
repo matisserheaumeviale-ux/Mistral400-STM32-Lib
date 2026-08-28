@@ -1,20 +1,28 @@
 /* =============================================================================================
- * Function      : Button
+ * Function      : bHasTickElapsed
  * =============================================================================================
  * AUTHOR        : Matisse Rhéaume-Viale & AFLC
- * VERSION       : 1.0
+ * VERSION       : 1.1
  * =============================================================================================
  * DESCRIPTION :
- * Declares the public API for Button.
- * RELATED FILE  : include/button.h
- * DEPENDENCIES  : See file includes.
+ * Implements bHasTickElapsed.
+ * RELATED FILE  : src/bHasTickElapsed.c
+ * DEPENDENCIES  : none
  * =============================================================================================
  * DATA TYPES & VARIABLES :
- * Uses the types and variables visible in the function signature.
+ * none
  * POINTER MANAGEMENT :
- * Validates pointers when received by the function.
+ * none
  * =============================================================================================
  * Expected Result:
- * The function performs its task without affecting other parts of the program.
+ * Returns true if the interval of ticks has elapsed, false otherwise.
  * =============================================================================================
  */
+#include "bHasTickElapsed.h"
+
+bool bHasTickElapsed(uint32_t uiNowTick,
+                          uint32_t uiPreviousTick,
+                          uint32_t uiIntervalTicks)
+{
+  return ((uint32_t)(uiNowTick - uiPreviousTick) >= uiIntervalTicks);
+}
