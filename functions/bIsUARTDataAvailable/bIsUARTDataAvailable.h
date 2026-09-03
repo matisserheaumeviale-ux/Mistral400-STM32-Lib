@@ -5,19 +5,32 @@
  * VERSION       : 1.0
  * =============================================================================================
  * DESCRIPTION :
- * Declares the public API for bIsUARTDataAvailable.
+ * Checks if data is available to be read from the UART.
  * RELATED FILE  : include/bIsUARTDataAvailable.h
- * DEPENDENCIES  : See file includes.
+ * DEPENDENCIES  : UART_HandleTypeDef
  * =============================================================================================
  * DATA TYPES & VARIABLES :
- * Uses the types and variables visible in the function signature.
+ * UART_HandleTypeDef *xUart - Pointer to the UART handle
+ * uint8_t *pucData - Pointer to store the received data
+ * =============================================================================================
  * POINTER MANAGEMENT :
- * Validates pointers when received by the function.
+ * The function checks if the pointers are not NULL before dereferencing them.
  * =============================================================================================
  * Expected Result:
- * The function performs its task without affecting other parts of the program.
+ * True if data is available, false otherwise
  * =============================================================================================
  */
+#ifndef BISUARTDATAAVAILABLE_H
+#define BISUARTDATAAVAILABLE_H
+
+#include "main.h"
+#include <stdbool.h>
+#include <stdint.h>
+
+bool bIsUARTDataAvailable(UART_HandleTypeDef *xUart, uint8_t *pucData);
+
+#endif
+
 #ifndef BISUARTDATAAVAILABLE_H
 #define BISUARTDATAAVAILABLE_H
 
